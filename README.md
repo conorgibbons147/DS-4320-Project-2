@@ -1,22 +1,29 @@
 # DS-4320-Project-2: Can Data Predict the Stock Market?
-
-## Table of Contents
-
   
-## Pipeline
-
 **Name:** Conor Gibbons
 
 **NetID:** hjd3db
 
+## Table of Contents
+* __[Executive Summary](#executive-summary)__
+* __[Problem Definition](#problem-definition)__
+* __[Domain Exposition](#domain-exposition)__
+* __[Data Creation](#data-creation)__
+* __[Metadata](#metadata)__
+* __[License](#license)__
+
+## Pipeline
+* __[pipeline.ipynb](pipeline/pipeline.ipynb)__
+* __[pipeline.md](pipeline/pipeline.md)__
+
 ### DOI
 
-### Data
 
 ### License
 MIT License — see [LICENSE](LICENSE)
 
 ### Executive Summary
+This repository contains the full pipeline for DS 4320 Project 2, a machine learning project that attempts to predict whether a stock's price will go up or down the following trading day. The project uses daily historical price and volume data for 13 large cap tech stocks including Apple, Microsoft, and NVIDIA spanning 2015 through 2024. Data was collected using the yfinance library and stored in MongoDB Atlas. An XGBoost classifier was trained on ten technical indicators derived from the raw price data and evaluated on held out data from 2023 to 2024, achieving 51.3% accuracy. The results confirm that simple technical indicators contain little to no exploitable signal in daily stock price movement, consistent with the Efficient Market Hypothesis. All code, data documentation, and results are organized in this repository.
 
 ## Problem Definition
 
@@ -34,7 +41,7 @@ predicting trends to modeling exact pricing. Narrowing the problem to next day m
 Stock price movement affects nearly everyone, through personal accounts, index funds, and the broader economy. Being able to predict whether a stock will go up or down the next day has obvious financial value, but it is also a fascinating challenge because markets are very unpredictable by nature. This project explores whether patterns in historical price and volume data contain any signal at all, and if so, how much. Even a model that performs modestly better than chance has real implications for how we think about markets and the limits of data driven decision making.
 
 ### Press Release
-[](press-release.md)
+[Can Data Data Beat the Stock Market?](press-release.md)
 
 ## Domain Exposition
 
